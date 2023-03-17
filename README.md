@@ -76,7 +76,7 @@ As with the previous lesson, there are some differences in the Treehouse videos 
 * In the "Deleting an Associated Record" video, when you add the Delete link to the `show` view, paste this in instead:
 
   ```erb
-  <%= link_to "Delete", [@post, comment], data: { 'turbo-method': :delete } %>
+  <%= link_to "Delete", [@post, comment], data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   ```
 
   Like in the previous video, you will not see an error message when you click the Delete link immediately after adding it to the view, so continue with the video.
